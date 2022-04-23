@@ -41,6 +41,8 @@ namespace ACM
             }
         }
 
+        public override string ToString() => FullName;
+
         public static int InstanceCount { get; set; }
 
         private string _lastName;

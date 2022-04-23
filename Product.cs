@@ -2,7 +2,7 @@
 
 namespace ACM
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
@@ -22,8 +22,10 @@ namespace ACM
         public decimal? CurrentPrice { get; set; }
 
         public int ProductId { get; set; }
-        
-        public bool Validate()
+
+        public override string ToString() => ProductName;
+
+        public override bool Validate()
         {
             var isValid = true;
             if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;
