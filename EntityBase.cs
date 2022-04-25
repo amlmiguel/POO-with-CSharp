@@ -13,7 +13,7 @@ namespace ACM
         public bool HasChanges { get; set; }
         public bool IsNew { get; private set; }
         public bool IsValid => Validate();
-        public abstract bool Validate();
+        public abstract bool Validate(); // Abstract Method does not require implementation
     }
 
 }

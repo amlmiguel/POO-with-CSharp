@@ -17,7 +17,7 @@ namespace ACM
 
         public string ProductName { get; set; }
 
-        public string Description { get; set; }
+        public string ProductDescription { get; set; }
 
         public decimal? CurrentPrice { get; set; }
 
