@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ACM
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product()
         {
@@ -33,6 +33,12 @@ namespace ACM
             {
                 _productName = value;
             }
+        }
+
+        public string Log()
+        {
+            var logString = ProductId + ": " + ProductName + " " + "Detail: " + ProductDescription + " " + "Status: " + EntityState.ToString();
+            return logString;
         }
 
         public override string ToString() => ProductName;
