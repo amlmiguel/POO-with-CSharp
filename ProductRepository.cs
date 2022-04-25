@@ -24,7 +24,7 @@ namespace ACM
             if (productId == 1)
             {
                 product.ProductName = "Product";
-                product.Description = "Description";
+                product.ProductDescription = "Description";
                 product.CurrentPrice = 10;
             }
             return product;
